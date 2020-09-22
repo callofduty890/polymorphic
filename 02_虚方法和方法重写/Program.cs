@@ -22,6 +22,16 @@ namespace _02_虚方法和方法重写
         }
     }
 
+    public class Circle : Dimension//派生类：圆
+    {
+        public Circle(double r) : base(r, 0) { }
+        public override double Area()//圆的面积
+        {
+            return Math.PI * x * x;
+        }
+    }
+
+
     class Program
     {
         static void Main(string[] args)
